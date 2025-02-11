@@ -6,7 +6,6 @@ resource "ibm_pi_workspace" "lon04-pws01" {
   pi_datacenter         = "lon06"
   pi_resource_group_id  = resource.ibm_resource_group.lon06-pws-rg.id
 }
-/*
 #---------------------------------------------------------------------------------------------
 # Subnet for Power Workspace - lon04-pws01
 #---------------------------------------------------------------------------------------------
@@ -23,6 +22,7 @@ resource "ibm_pi_network" "sn01-lon04-pws01" {
 #  }
 }
 
+/*
 resource "ibm_pi_network" "sn02-lon04-pws01" {
   pi_network_name      = "sn02-lon04-pws01-prd"
   pi_network_type      = "vlan"
