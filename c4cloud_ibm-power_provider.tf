@@ -12,7 +12,7 @@ terraform {
 provider "ibm" {
   region = "wdc"
   zone = "wdc06"
-  ibmcloud_api_key = "var.ibmapikey"
+  ibmcloud_api_key = var.ibmapikey
 }
 #---------------------------------------------------------------------------------------------
 
